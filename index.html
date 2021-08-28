@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
+  <title>Boostrap Visualization Dashboard</title>
+  <!--Boostrap style-->
+  <link rel="stylesheet" href="css/boostrap.min.css" media="screen">
+  <link rel="stylesheet" href="css/styles.css" media="screen">
+
+</head>
+
+<body></body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid navbar-custom">
+      
+      <div class="row">
+        <div class="navbar-header"
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="icon-bar"></span>
+          </button>
+          <div class="col-xs-9" phone-nav">
+            <a class="navbar-brand" href="#" id+"logo" style="background-color:aqua">Latitude</a>
+          </div>
+        </div> 
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+          <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+               <li><a href="visualizations/temp.html">Max Temperature</a></li>
+                <li><a href="visualizations/humidity.html">Humidity</a></li>
+                <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
+                <li><a href="visualizations/wind.html">Wind</a></li>
+              </ul> 
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+          </ul> 
+      </div>
+    </div>
+  </nav>
+    <div class="container mt-4">
+       <div class="jumbotron">   
+        <section class="row">
+            <div class="col-md-8">
+                <article class="description-content">
+                    <h2 class="text-success mb-3 ">Summary: Latitude vs. X</h2> 
+                    <p class="text-justify text-muted">
+                      <img src="assets/images/Fig1.png" style="width:230px;height:230px"
+                      class="assets/images-fluid float-left" mr-4 ml3 alt="Lattitude vs. Max Temperature" id = "description-image">
+                      The purpose of this project was to analyze how weather changes as you get closer to the equater. 
+                      To accomplish this analysis. we first pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.
+                      <br>
+                      <br>
+                      After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                      Factors we looked at included:temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis,as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                </article>
+            </div>  
+
+            <div class = "col-md-4">
+              <section>
+                  <h2 class="text-success">Visualizations</h2>
+                  <div class="images">
+                      <a href="visualization/temp.html"><img src="assets/images/Fig1.png"  style="width:150px;height:150px"  alt="Lattitude vs. Max Temperature"></a>
+                      <a href="visualization/humidity.html"><img src="assets/images/Fig2.png"  style="width:150px;height:150px" alt="Lattitude vs. Humidity"></a>
+                      <a href="visualization/cloudiness.html"><img src="assets/images/Fig3.png"  style="width:150px;height:150px" alt="Lattitude vs. Cloudiness"></a>
+                      <a href="visualization/wind.html"><img src="assets/images/Fig4.png" style="width:150px;height:150px" alt="Lattitude vs. Wind Speed"></a>
+                  </div>
+              </section>
+          </div>
+      </section>
+     </div> 
+    </div>
+
+  </div> 
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <footer>
+      <div class = "text-center"style="background-color:green" > &copy; Copyright 2020 </div>
+    </footer>
+    </body>
+</html>
