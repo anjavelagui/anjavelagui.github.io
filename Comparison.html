@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Comparison</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+
+    <link rel="stylesheet" href="css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+    
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="index_new.html" id="logo">Latitude</a>
+            </div>
+          </div>
+
+        
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="visualizations/temp.html">Max Temperature</a></li>
+                  <li><a href="visualizations/humidity.html">Humidity</a></li>
+                  <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
+                  <li><a href="visualizations/wind.html">Wind</a></li>
+                </ul> 
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+            </ul> 
+
+          </div>
+        </div>
+
+    </nav>
+    <div class="container">
+        <section class="row">
+            <div class="description-content">
+                <h1><strong class="text-success">Comparison:Latitude vs X</strong></h1>
+                <hr>
+                <p><strong> Click any plot to get an in-depth analysis.</strong></p>
+                <div class = "container" style="padding-bottom:10px"></div>
+                <div class = "row">
+                    <div class="col-lg-6" style = "padding: 10px">
+                     <h2><div class = "text-success">vs. Max Temperature</div></h2>
+                        <a href = "visualizations/temp.html" >
+                            <img src="assets/images/Fig1.png" title="Latitude vs. Max Temperature"> 
+                        </a>   
+                    </div>
+                    
+                    <div class="col-lg-6" style = "padding: 10px">
+                    <h2><div class = "text-success">vs. Humidity</div></h2>
+                        <a href = "visualizations/humidity.html" >
+                            <img src="assets/images/Fig2.png" title="Latitude vs. Humidity"> 
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6" style = "padding: 10px">
+                        <h2><div class = "text-success">vs. Cloudiness </div></h2>
+                        <a href = "visualizations/cloudiness.html" >
+                            <img src="assets/images/Fig3.png" title="Latitude vs. Cloudiness"> 
+                        </a>
+                    </div>
+                    <div class="col-lg-6" style = "padding: 10px">
+                        <h2><div class = "text-success">vs. Wind Speed</div></h2>
+                        <a href = "visualizations/wind.html" >
+                            <img src="assets/images/Fig4.png" title="Latitude vs. Wind"> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
